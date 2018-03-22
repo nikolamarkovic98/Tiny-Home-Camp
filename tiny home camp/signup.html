@@ -1,0 +1,113 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tiny Home Camp</title>
+		<link rel="shortcut icon" type="image/png" href="logo.png">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="open" onclick="openSideNavbar()">
+					<svg width="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</div>
+			<div class="content-wrap">
+				<div class="flex">
+					<div class="box-1">
+						<a href="index.html" id="logo"><img src="logoSmall.png"></a>
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="search.html">Search</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="box-2">
+						<div class="loginarea">
+							<p>Log in to Your Account</p>
+							<div>
+								<input type="text" placeholder="Email">
+								<input type="text" placeholder="Password">
+								<button type="submit" class="login">Log In</button>
+								<a href="signup.html" class="signup">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="sidebar" id="side">
+			<a class="close" onclick="closeSideNavbar()">&times</a>
+			<div class="box">
+				<a href="signup.html" class="signup">Sign Up</a>
+				<a href="login.html" class="login">Log In</a>
+			</div>
+			<input type="text" placeholder="Email">
+			<input type="text" placeholder="Password">
+
+			<div>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="search.html">Search</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<section class="loginarea">
+			<div class="content-wrap">
+				<!-- <a href="index.html"><img src="logoBig.png"></a> -->
+				<div class="center">
+					<h1>Create account</h1>
+					<form>
+						<label>Name:</label>
+						<input type="text">
+						<label>Email address:</label>
+						<input type="text" name="email">
+						<label>Password:</label>
+						<input type="text" name="Password">
+						<button type="submit" class="mybutton">Sign Up</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<div class="content-wrap clear">
+				<div class="left clear">
+					<div class="leftleft">
+						<div class="logo">
+							<a href="index.html"><img src="logoBig.png"></a>
+						</div>
+					</div>
+					<div class="leftright">
+						<ul>
+							<li><b>Company</b></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Youtube</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

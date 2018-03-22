@@ -1,0 +1,58 @@
+@media(max-width:900px){
+	header .open{
+		display: block;
+	}
+	header .box-2{
+		display: none;
+	}
+}
+
+@media(max-width: 680px){
+	.contact .center{
+		margin: 0;
+		width: 100%;
+	}
+	.loginarea .center{
+		margin: 0;
+		width: 100%;
+	}
+	main .section-b .leftabout{
+		float: none;
+		width: 100%;
+	}
+	main .section-b .rightabout{
+		float: none;
+		width: 100%;
+	}
+
+
+	main .section-c .left{
+		float: none;
+		width: 100%;
+	}
+	main .section-c .right{
+		float: none;
+		width: 100%;
+	}
+}
+
+@media(max-width:620px){
+	header .flex{
+		justify-content: space-around;
+	}
+	header .flex ul{
+		display: none;
+	}
+	header .flex .box-2{
+		display: none;
+	}
+}
+
+@media(max-width: 440px){
+	main .section-c p{
+		margin-bottom: 2em;
+	}
+	main .section-c .flex .box{
+		flex-basis: 100%;
+	}
+}
