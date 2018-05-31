@@ -1,151 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Tiny Home Camp</title>
-		<link rel="shortcut icon" type="image/png" href="logo.png">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-		<header>
-			<div class="open" onclick="openSideNavbar()">
-					<svg width="30" height="30">
-					<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-					<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-					<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-				</svg>
-			</div>
-			<div class="content-wrap">
-				<div class="flex">
-					<div class="box-1">
-						<a href="index.html" id="logo"><img src="logoSmall.png"></a>
-						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="search.html">Search</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="box-2">
-						<div class="loginarea">
-							<p>Log in to Your Account</p>
-							<div>
-								<input type="text" placeholder="Email">
-								<input type="text" placeholder="Password">
-								<button type="submit" class="login">Log In</button>
-								<a href="signup.html" class="signup">Sign Up</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-		<div class="sidebar" id="side">
-			<a class="close" onclick="closeSideNavbar()">&times</a>
-			<div class="box">
-				<a href="signup.html" class="signup">Sign Up</a>
-				<a href="login.html" class="login">Log In</a>
-			</div>
-			<input type="text" placeholder="Email">
-			<input type="text" placeholder="Password">
-
-			<div>
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="search.html">Search</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-
-
-
-		<!-- Main content -->
-		<main>
-
-
-
-			<!-- Contact Us -->
-			<section class="contact">
-				<div class="content-wrap">
-					<h1>Contact us</h1>
-					<p>Send us a message if you have any problems and we will make sure to have your question answered in the shortest time possible!</p>
-					<div class="center">
-						<form id="myForm">
-							<div>
-								<label>Contact email:</label>
-								<input type="text" id="email">
-							</div>
-							<div>
-								<label>Full name:</label>
-								<input type="text">
-							</div>
-							<div>
-								<label>Phone:</label>
-								<input type="text">
-							</div>
-							<div>
-								<label>Description:</label>
-								<textarea></textarea>
-							</div>
-							<button type="submit" class="mybutton">Submit</button>
-						</form>
-						<div id="submitError"></div>
-					</div>
-				</div>
-			</section>
-
-
-
-		</main>
-
-
-
-		<!-- Footer -->
-		<footer>
-			<div class="content-wrap clear">
-				<div class="left clear">
-					<div class="leftleft">
-						<div class="logo">
-							<a href="index.html"><img src="logoBig.png"></a>
-						</div>
-					</div>
-					<div class="leftright">
-						<ul>
-							<li><b>Company</b></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="right">
-					<ul>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Youtube</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-
-		<script>
-			document.getElementById('myForm').addEventListener('submit', act);
-
-			function act(e){
-				var email = document.getElementById('email').value;
-
-				if(email == ''){
-					document.getElementById('submitError').innerHTML = '<p>Please enter a valid username.</p>';
-				} else{
-					document.getElementById('submitError').innerHTML = '<p>Your email is sent!</p>';
-				}
-
-				e.preventDefault();
-			}
-		</script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+<html lang=en>
+<head>
+<title>Tiny Home Camp</title>
+<link rel="shortcut icon" type=image/png href=logo.png>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<link rel=stylesheet type=text/css href=css/style.css>
+</head>
+<body>
+<header>
+<div class=open onclick=openSideNavbar()>
+<svg width=30 height=30>
+<path d="M0,5 30,5" stroke=#fff stroke-width="5"/>
+<path d="M0,14 30,14" stroke=#fff stroke-width="5"/>
+<path d="M0,23 30,23" stroke=#fff stroke-width="5"/>
+</svg>
+</div>
+<div class=content-wrap>
+<div class=flex>
+<div class=box-1>
+<a href=index.html id=logo><img src=logoSmall.png alt="Image not loaded"></a>
+<ul>
+<li><a href=about.html>About</a></li>
+<li><a href=search.html>Search</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</div>
+<div class=box-2>
+<div class=loginarea>
+<p>Log in to Your Account</p>
+<div>
+<input type=text placeholder=Email>
+<input type=text placeholder=Password>
+<button type=submit class=login>Log In</button>
+<a href=signup.html class=signup>Sign Up</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class=sidebar id=side>
+<a class=close onclick=closeSideNavbar()>&times;</a>
+<div class=box>
+<a href=signup.html class=signup>Sign Up</a>
+<a href=login.html class=login>Log In</a>
+</div>
+<input type=text placeholder=Email>
+<input type=text placeholder=Password>
+<div>
+<ul>
+<li><a href=about.html>About</a></li>
+<li><a href=search.html>Search</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</div>
+</div>
+<main>
+<section class=contact>
+<div class=content-wrap>
+<h1>Contact us</h1>
+<p>Send us a message if you have any problems and we will make sure to have your question answered in the shortest time possible!</p>
+<div class=center>
+<form id=myForm>
+<div>
+<label>Contact email:</label>
+<input type=text id=email>
+</div>
+<div>
+<label>Full name:</label>
+<input type=text>
+</div>
+<div>
+<label>Phone:</label>
+<input type=text>
+</div>
+<div>
+<label>Description:</label>
+<textarea></textarea>
+</div>
+<button type=submit class=mybutton>Submit</button>
+</form>
+<div id=submitError></div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="content-wrap clear">
+<div class="left clear">
+<div class=leftleft>
+<div class=logo>
+<a href=index.html><img src=logoBig.png alt="Image not loaded"></a>
+</div>
+</div>
+<div class=leftright>
+<ul>
+<li><b>Company</b></li>
+<li><a href=about.html>About</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class=right>
+<ul>
+<li><a href=#>Facebook</a></li>
+<li><a href=#>Twitter</a></li>
+<li><a href=#>Instagram</a></li>
+<li><a href=#>Youtube</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>document.getElementById("myForm").addEventListener("submit",act);function act(b){var a=document.getElementById("email").value;if(a==""){document.getElementById("submitError").innerHTML="<p>Please enter a valid username.</p>"}else{document.getElementById("submitError").innerHTML="<p>Your email is sent!</p>"}b.preventDefault()};</script>
+<script src=js/main.js></script>
+</body>
 </html>
