@@ -1,160 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Tiny Home Camp</title>
-		<link rel="shortcut icon" type="image/png" href="logo.png">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-		<header>
-			<div class="open" onclick="openSideNavbar()">
-					<svg width="30" height="30">
-					<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-					<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-					<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-				</svg>
-			</div>
-			<div class="content-wrap">
-				<div class="flex">
-					<div class="box-1">
-						<a href="index.html" id="logo"><img src="logoSmall.png"></a>
-						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="search.html">Search</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="box-2">
-						<div class="loginarea">
-							<p>Log in to Your Account</p>
-							<div>
-								<input type="text" placeholder="Email">
-								<input type="text" placeholder="Password">
-								<button type="submit" class="login">Log In</button>
-								<a href="signup.html" class="signup">Sign Up</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-		<div class="sidebar" id="side">
-			<a class="close" onclick="closeSideNavbar()">&times</a>
-			<div class="box">
-				<a href="signup.html" class="signup">Sign Up</a>
-				<a href="login.html" class="login">Log In</a>
-			</div>
-			<input type="text" placeholder="Email">
-			<input type="text" placeholder="Password">
-
-			<div>
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="search.html">Search</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-
-
-
-		<!-- Main content -->
-		<main>
-
-
-			<!-- About section -->
-			<section id="about">
-				<div class="content-wrap">
-					<h1>About <i id="wtf">tiny</i>House Camp</h1>
-					<p>Tiny is the largest tiny house camp, famous for it's high quality tiny homes where people from different parts of the world gather to share experience and hangout. Tiny was founded in 2000 and has over 1 million visits every year.</p>
-					<p>We strive to improve to create an experience that you will remember for a long time!	</p>
-				</div>
-			</section>
-
-			<!-- Section-B -->
-			<section class="env">
-				<div class="content-wrap">
-					<div class="flex">
-						<div class="box">
-							<img src="images/th4.jpeg">
-						</div>
-						<div class="box">
-							<h1>Beautiful Environment</h1>
-							<p>Our tiny camps are located at the healthiest and breath taking locations that you only dream about.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="env-1">
-				<div class="content-wrap">
-					<div class="flex">
-						<div class="box">
-							<h1>Tiny homes</h1>
-							<p>Tiny camp is filled with a lot variety and different houses that we are sure you will find just the right fit for you!</p>
-							<a href="search.html" class="mybutton">Search</a>
-						</div>
-						<div class="box">
-							<img src="images/th4.jpeg">
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-
-			<section class="env-2">
-				<div class="content-wrap">
-					<div class="flex">
-						<div class="box">
-							<img src="images/th4.jpeg">
-						</div>
-						<div class="box">
-							<h1>More than million visits every year</h1>
-							<p>Over the years we have grown and created a community that gather together every year at our camp and just hangout!</p>
-							<p>We invite you to become a part of our community!</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-
-		</main>
-
-
-
-		<!-- Footer -->
-		<footer>
-			<div class="content-wrap clear">
-				<div class="left clear">
-					<div class="leftleft">
-						<div class="logo">
-							<a href="index.html"><img src="logoBig.png"></a>
-						</div>
-					</div>
-					<div class="leftright">
-						<ul>
-							<li><b>Company</b></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="right">
-					<ul>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Youtube</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-		<script type="text/javascript" src="js/main.js"></script>	
-	</body>
+<html lang=en>
+<head>
+<title>Tiny Home Camp</title>
+<link rel="shortcut icon" type=image/png href=logo.png>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<link rel=stylesheet type=text/css href=css/style.css>
+</head>
+<body>
+<header>
+<div class=open onclick=openSideNavbar()>
+<svg width=30 height=30>
+<path d="M0,5 30,5" stroke=#fff stroke-width="5"/>
+<path d="M0,14 30,14" stroke=#fff stroke-width="5"/>
+<path d="M0,23 30,23" stroke=#fff stroke-width="5"/>
+</svg>
+</div>
+<div class=content-wrap>
+<div class=flex>
+<div class=box-1>
+<a href=index.html id=logo><img src=logoSmall.png alt=logo></a>
+<ul>
+<li><a href=about.html>About</a></li>
+<li><a href=search.html>Search</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</div>
+<div class=box-2>
+<div class=loginarea>
+<p>Log in to Your Account</p>
+<div>
+<input type=text placeholder=Email>
+<input type=text placeholder=Password>
+<button type=submit class=login>Log In</button>
+<a href=signup.html class=signup>Sign Up</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class=sidebar id=side>
+<a class=close onclick=closeSideNavbar()>&times;</a>
+<div class=box>
+<a href=signup.html class=signup>Sign Up</a>
+<a href=login.html class=login>Log In</a>
+</div>
+<input type=text placeholder=Email>
+<input type=text placeholder=Password>
+<div>
+<ul>
+<li><a href=about.html>About</a></li>
+<li><a href=search.html>Search</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</div>
+</div>
+<main>
+<section id=about>
+<div class=content-wrap>
+<h1>About <i id=wtf>tiny</i>House Camp</h1>
+<p>Tiny is the largest tiny house camp, famous for it's high quality tiny homes where people from different parts of the world gather to share experience and hangout. Tiny was founded in 2000 and has over 1 million visits every year.</p>
+<p>We strive to improve to create an experience that you will remember for a long time! </p>
+</div>
+</section>
+<section class=env>
+<div class=content-wrap>
+<div class=flex>
+<div class=box>
+<img src=images/th4.jpeg alt="Image not loaded">
+</div>
+<div class=box>
+<h1>Beautiful Environment</h1>
+<p>Our tiny camps are located at the healthiest and breath taking locations that you only dream about.</p>
+</div>
+</div>
+</div>
+</section>
+<section class=env-1>
+<div class=content-wrap>
+<div class=flex>
+<div class=box>
+<h1>Tiny homes</h1>
+<p>Tiny camp is filled with a lot variety and different houses that we are sure you will find just the right fit for you!</p>
+<a href=search.html class=mybutton>Search</a>
+</div>
+<div class=box>
+<img src=images/th4.jpeg alt="Image not loaded">
+</div>
+</div>
+</div>
+</section>
+<section class=env-2>
+<div class=content-wrap>
+<div class=flex>
+<div class=box>
+<img src=images/th4.jpeg alt="Image not loaded">
+</div>
+<div class=box>
+<h1>More than million visits every year</h1>
+<p>Over the years we have grown and created a community that gather together every year at our camp and just hangout!</p>
+<p>We invite you to become a part of our community!</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="content-wrap clear">
+<div class="left clear">
+<div class=leftleft>
+<div class=logo>
+<a href=index.html><img src=logoBig.png alt="Image not loaded"></a>
+</div>
+</div>
+<div class=leftright>
+<ul>
+<li><b>Company</b></li>
+<li><a href=about.html>About</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class=right>
+<ul>
+<li><a href=#>Facebook</a></li>
+<li><a href=#>Twitter</a></li>
+<li><a href=#>Instagram</a></li>
+<li><a href=#>Youtube</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script src=js/main.js></script>
+</body>
 </html>
