@@ -1,4 +1,4 @@
 # Tiny-Home-Camp
 Tiny Houses
 
-This is a web page that I created as a portfolio in order to show my current frontend knowledge.
+I always liked tiny houses so I decided to create a website about them as a learning experience.
